@@ -17,7 +17,14 @@
   "peerDependencies": {
     "@nestjs/common": "^10.0.2",
     "@nestjs/core": "^10.0.2",
-    "@ubs-platform/users-common": "1.0.8"
+    "@nestjs/jwt": "^10.2.0",
+    "@nestjs/microservices": "^10.3.3",
+    "@nestjs/mongoose": "^10.0.4",
+    "@nestjs/passport": "^10.0.3",
+    "@nestjs/platform-express": "^10.0.2",
+    "@ubs-platform/nest-microservice-setup-util": "1.0.6",
+    "@ubs-platform/users-common": "1.0.8",
+    "@ubs-platform/users-mona-roles": "1.0.1"
   },
   "dependencies": {
     "tslib": "^2.3.0",
