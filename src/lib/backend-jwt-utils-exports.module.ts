@@ -1,7 +1,7 @@
-import { Module } from '@nestjs/common';
-import { JwtModule, JwtService } from '@nestjs/jwt';
-import { PassportModule } from '@nestjs/passport';
-import { SECRET_JWT } from 'libs/backend-global/ubs/users/src/lib/util/consts';
+import { Module } from "@nestjs/common";
+import { JwtModule, JwtService } from "@nestjs/jwt";
+import { PassportModule } from "@nestjs/passport";
+import { SECRET_JWT } from "./utils/jwt-consts";
 
 // @Module({
 //   controllers: [],
@@ -14,9 +14,9 @@ import { SECRET_JWT } from 'libs/backend-global/ubs/users/src/lib/util/consts';
 // export class BackendJwtUtilsExportModule {}
 
 export const BackendJwtUtilsExportModule = [
-  PassportModule.register({ defaultStrategy: 'jwt' }),
+  PassportModule.register({ defaultStrategy: "jwt" }),
   JwtModule.register({
     secret: SECRET_JWT,
-    signOptions: { expiresIn: '30d' },
+    signOptions: { expiresIn: "30d" },
   }),
 ];

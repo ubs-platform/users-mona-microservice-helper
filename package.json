@@ -24,7 +24,9 @@
     "@nestjs/platform-express": "^10.0.2",
     "@ubs-platform/nest-microservice-setup-util": "1.0.6",
     "@ubs-platform/users-common": "1.0.8",
-    "@ubs-platform/users-mona-roles": "1.0.1"
+    "@ubs-platform/users-mona-roles": "1.0.1",
+    "passport-jwt": "^4.0.1",
+    "rxjs": "^7.8.0"
   },
   "dependencies": {
     "tslib": "^2.3.0",

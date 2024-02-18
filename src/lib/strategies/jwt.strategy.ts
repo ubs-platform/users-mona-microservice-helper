@@ -1,12 +1,11 @@
-import { UserDTO } from '@lotus-web/ubs-common/users';
-import { Inject, Injectable, Scope } from '@nestjs/common';
-import { ClientProxy } from '@nestjs/microservices';
-import { PassportStrategy } from '@nestjs/passport';
-import { User } from 'libs/backend-global/ubs/users/src/lib/domain/user.model';
-import { SECRET_JWT } from 'libs/backend-global/ubs/users/src/lib/util/consts';
-import { ExtractJwt, Strategy } from 'passport-jwt';
-import { firstValueFrom } from 'rxjs';
-import { UserService } from '../service/user.service';
+import { Inject, Injectable, Scope } from "@nestjs/common";
+import { ClientProxy } from "@nestjs/microservices";
+import { PassportStrategy } from "@nestjs/passport";
+import { ExtractJwt, Strategy } from "passport-jwt";
+import { firstValueFrom } from "rxjs";
+import { UserService } from "../service/user.service";
+import { SECRET_JWT } from "../utils/jwt-consts";
+import { UserDTO } from "@ubs-platform/users-common";
 
 @Injectable({})
 export class JwtStrategy extends PassportStrategy(Strategy) {
